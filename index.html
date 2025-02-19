@@ -9,115 +9,118 @@
 
 	<style>
 
+header
+{
+    display: flex;
+    flex-direction: column;
 
+    height: 100vh;
+    padding: 1em;
 
+    color: var(--inverted-text-color);
+    background-color: var(--cafe);
+    background-image: url('img/mars.jpg');
 
+    justify-content: center;
+    align-items: center;
+}
 
+header div
+{
+    width: fit-content;
+    padding: 0 4em;
 
+    border-radius: 1em;
+    background-color: var(--cafe);
+}
 
-	
+header h1
+{
+    font-size: 8rem;
+    font-weight: 200;
+    line-height: .8;
 
-		
-			header{
-				padding: 1em;
-			
-				background-color: var(--cafe);
-				color: var(--inverted-text-color);
-				height: 100vh;
-				display: flex;
-				flex-direction: column;
-				justify-content: center;
-				align-items: center;
+    margin-top: 0;
 
-				  background-image: url("img/mars.jpg");
-			}
+    text-align: center;
+}
 
-			header div{
-				background-color: var(--cafe);
-				width: fit-content;
-				padding: 0 4em;
-				border-radius: 1em;
-			}
-		
-		header h1{
-font-weight: 200;
-font-size: 8rem;
-text-align: center;
+header p
+{
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.2;
 
-line-height: .8;
-margin-top: 0;
+    margin-top: 3em;
 
+    text-align: center;
+}
 
-		}
-		header p{
-font-weight: 600;
-font-size: 1.2rem;
-text-align: center;
-margin-top:3em;
-line-height: 1.2;
+#frontmatter
+{
+    max-width: 40em;
+    padding: 4em 1em;
+}
 
+#mainmatter
+{
+    display: flex;
+    flex-direction: row;
 
-		}
+    padding: 4em 1em;
 
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+}
 
-		#frontmatter{
-			padding: 4em 1em;
-			max-width: 40em;
-		}
+#mainmatter section
+{
+    max-width: 25em;
+    height: fit-content;
+}
 
-		#mainmatter{
-						padding: 4em 1em;
-						display: flex;
-						flex-direction: row;
-						flex-wrap: wrap;
-						gap:2em;
-						justify-content: center;
+.introduction
+{
+    font-size: 1.2em;
+}
 
-		}
+.essays
+{
+    padding: 1em 1.5em;
 
-		#mainmatter section{
-			max-width:25em;
-			height: fit-content;
-		}
+    border-radius: 1em;
+    background-color: var(--gold);
+}
 
-		.introduction{
-			font-size: 1.2em;
+.minisite
+{
+    padding: 1em 1.5em;
 
+    border-radius: 1em;
+    background-color: var(--burlywood);
+}
 
-		}
-		.biography{
+#mainmatter ul
+{
+    padding-left: 0;
 
-		}
+    list-style: none;
+}
 
-		.essays{
-			
-			border-radius: 1em;
-			padding: 1em 1.5em;
-			background-color: var(--gold);
-		}
+#mainmatter li
+{
+    padding: .333em;
+}
 
-		.minisite{
-			border-radius: 1em;
-			padding: 1em 1.5em;
-			background-color: var(--burlywood);
-		}
+#mainmatter li a
+{
+    font-weight: bold;
 
+    display: inline-block;
 
-
-		#mainmatter ul{
-			padding-left: 0;
-			list-style: none;
-		}
-		#mainmatter li{
-			padding: .333em;
-		}
-
-				#mainmatter li a{
-			font-weight: bold;
-			display: inline-block;
-			padding-right: 1em;
-		}
-
+    padding-right: 1em;
+}
 	</style>
 </head>
 <body>
@@ -166,6 +169,17 @@ line-height: 1.2;
 		<section class='essays'>
 			
 	
+			<h3>vinaya—miscellaneous discussions</h3>
+			<p>Some writings on the monastic discipline.</p>
+			<ul>
+				<li><a href='trustworthy.html'>A Trustworthy Woman: why the Buddha told his monks to believe what she said
+</a></li>
+			</ul>
+</section>
+
+		<section class='essays'>
+			
+	
 			<h3>other things</h3>
 			<p>Things that don’t fit elsewhere.</p>
 			<ul>
@@ -197,6 +211,7 @@ line-height: 1.2;
 			<h3>escalating global chaos aka climate change</h3>
 			<p>As the world ends, what is left for us to do but to do the right thing? The Buddha taught that all things are in a constant state of change; that the climate is no exception, as it too changes over time; and that climate change is driven by human greed. He also taught us the solution—contentment and renunciation. Yet, even though millions of people live lives of contentment and simplicity, to those in power it is unthinkable. It is easier to imagine the end of the world than the end of consumerism. </p>
 			<ul>
+				<li><a href='mother-earth.html''>Mother Earth</a></li>
 <li><a href='gurrangatch.html'>The serpent Gurrangatch and the hunter Mirragan</a> The aboriginal myth of Gurrangatch and Mirragan tells of a time when the land of the Blue Mountains was shaped in the struggle for life, a struggle marked by both passion and restraint. </li>
 <li><a href='things-as-they-are.html'>Things As They Are</a> A Buddhist monk’s view of the climate emergency. UPDATE 2024: it’s worse. </li>
 <li><a href='changemakers.html'>Changemakers</a>For all those who want a better world, and wonder why it seems so hard.</li>
