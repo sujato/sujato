@@ -25,7 +25,7 @@ header
     align-items: center;
 }
 
-header div
+header .main-title
 {
     width: fit-content;
     padding: 0 4em;
@@ -54,6 +54,11 @@ header p
     margin-top: 3em;
 
     text-align: center;
+}
+
+#czw{
+	background-color: white;
+	color: var(--primary-text-color);
 }
 
 #frontmatter
@@ -125,12 +130,10 @@ header p
 </head>
 <body>
 	<header>
-		<div>
+		<div class='main-title'>
 		<h1><i>words by</i> sujato</h1>
 		<p>Collected writings, talks, and assorted imaginalia</p>
 	</div>
-
-
 	</header>
 	<main>
 		<section id='frontmatter'>
@@ -138,6 +141,8 @@ header p
 			<p>Hi, my name is Sujato. I’m a Buddhist monk (or “<i>bhikkhu</i>”). For a while I have been writing and speaking on various matters more-or-less associated with Buddhism. Here I bring it all together as best I can.</p>
 					<p>I tend to write things that I don’t talk about. If you’re looking for meditation teachings or teachings on Buddhism, <a href='https://lokanta.live/'>check out my recorded talks</a>, or better, <a href='https://lokanta.github.io/'>join our community in person or online</a>. If you’re looking for technical discussions of Pali, or sci-fi novels, or critiques of AI, or discussions related to global warming, you’re in the right place. </p>
 		</section>
+
+
 		<section class='biography'>
 			<h2>about me</h2>
 			<ul>
@@ -158,7 +163,10 @@ header p
 		<p>I’ve thought about gathering all my writings together for quite some time, but never really found a satisfying tech solution. Eventually I thought, “Why not no solution at all?” and here we are.</p><p>Nothing in this site is automated. Everything is written in a text editor. The entire site consists of a folder with a bunch of HTML files, with some CSS and images. </p><p>You’re welcome to <a href='https://github.com/sujato/sujato/archive/refs/heads/main.zip'>download the whole thing from Github</a> and do whatever you want with it. Except AI. </p><p>This page is for navigation. To search the site, try using site search in a standard search engine, or else download the files and search them locally with Sublime Text or something.</p>
 		</section>
 	</section>
+
 	<section id='mainmatter'>
+
+
 		<section class='essays'>
 			
 	
@@ -252,6 +260,8 @@ header p
 			<p>This site is written by hand with a text editor. All words are 100% human.</p>
 			<p>Copyright for all my work is Creative Commons Zero, which means you are legally permitted to do whatever you like with it.</p>
 			<p><b>Don’t use any of my work for AI.</b> <br>Lack of copyright doesn’t mean it’s okay to use for AI. It just means that I am not going to take you to court. It is up to you to act decently.</p>
+				<script src="https://co2widget.com/build/widget.min.js" defer></script>
+<div id="czw" class="czw"></div>
 	</footer>
 </body>
 </html>
